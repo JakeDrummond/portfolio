@@ -125,7 +125,13 @@ button.subheader {
 }
 
 .body {
-
+  font-family: 'Open Sans', 'Helvetica', sans-serif; 
+  font-size: 0.8em; 
+  color: #777;
+  font-weight: 100;
+  margin-bottom: 50px;
+  line-height: 1.4em;
+  margin-top: 10px;
 }
 
 .page-base {
