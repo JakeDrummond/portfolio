@@ -1,0 +1,282 @@
+
+/* 
+*  GLOBAL STYLES
+*/
+
+/* Font Stacks
+*
+*  font-family: 'Open Sans', 'Helvetica', sans-serif; 
+*  font-family: 'Noto Serif JP', serif; 
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-bar {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 100%;
+  height: 20px;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  padding: 0 7.5%;
+  z-index: 20;
+}
+
+.nav-bar .logo {
+  margin-right: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
+.nav-bar .line {
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  margin-right: 18px;
+  height: 10px;
+  width: 1.5px;
+  background: #888;
+}
+
+.nav-bar a {
+  color: #888;
+  font-family: 'Open Sans', sans-serif; 
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  margin-right: 30px;
+  transition: color 222ms ease;
+}
+
+.nav-bar a:hover {
+  color: black;
+  font-weight: 600;
+}
+
+.nav-bar a.isSelected {
+  color: black;
+  font-weight: 600;
+}
+
+body {
+  font-size: 20px; 
+  font-family: 'Open Sans', 'Helvetica', sans-serif; 
+  /* font-family: 'Noto Serif JP', serif; */
+}
+
+button {
+  outline: none;
+  border: none;
+  margin: 0;
+}
+
+button.subheader {
+  margin: 0;
+}
+
+.header {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 100;
+  letter-spacing: 0;
+  font-size: 2.2em; 
+  line-height: 2em;
+}
+
+.subheader {
+  font-family: 'Open Sans', 'Helvetica', sans-serif; 
+  font-size: 0.8em; 
+  color: grey;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+
+.body {
+
+}
+
+.page-base {
+  position: absolute;
+  left: 0;
+  padding-left: 15%;
+  top: 20%;
+  width: 50%;
+}
+
+/* 
+*  LANDING PAGE
+*/
+
+.landing-text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-inner {
+  display: block;
+  width: 100%;
+  margin: 0% 5% 0% 15%;
+  font-size: 9px;
+}
+
+.text-inner h1 {
+  font-family: 'Noto Serif JP', serif;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 100;
+  font-size: 5.5em;
+  line-height: 1.2em;
+  letter-spacing: -0.8px;
+}
+
+.break {
+  display: block;
+  width: 100px;
+  height: 5px;
+  background: red;
+  margin-bottom: 30px;
+  display: none;
+}
+
+.text-inner h2 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  font-size: 1.7em;
+  line-height: 2.5em;
+}
+
+.text-inner h3 {
+  font-family: sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.02em;
+  font-size: 1.7em;
+}
+
+.landing-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url('images/landingpage1.JPG');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  /* filter: grayscale(100%) */
+}
+
+/* 
+* ABOUT PAGE
+*/
+
+.about-image {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  width: 40%;
+  height: 0;
+  padding-bottom: 50%;
+  background-image: url('images/about.jpeg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+/* 
+* RESUME PAGE
+*/
+
+.page-base.resume-page {
+  width: 80%;
+  margin-bottom: 100px;
+}
+
+.resume {
+  margin-top: 50px;
+  border: 1px solid lightgrey;
+  width: 100%;
+  height: 0;
+  padding-bottom: calc(100% + 150px);
+  background-image: url('images/JakeDrummond_Resume.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.resume-label {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.resume-label:hover > .down-icon svg, .resume-label:hover > button {
+  fill: black;
+  color: black;
+}
+
+.down-icon {
+  display: inline-block;
+  height: 15px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+}
+
+.down-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: #555;
+}
+
+/* 
+* CONTACT PAGE
+*/
+
+.contact-image {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  width: 40%;
+  height: 0;
+  padding-bottom: 50%;
+  background-image: url('images/contact.JPG');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.6em;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2em;
+}
+
+.email {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 100;
+  color: cornflowerblue;
+  font-size: 0.8em;
+}
+
+.email:hover {
+  text-decoration: underline;
+}
